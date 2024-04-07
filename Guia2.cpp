@@ -177,4 +177,111 @@ int main()
 
     return 0;
 }*/
+/* EJERCICIO 8:
+8. Basado en los 2 ejercicios anteriores, hacer un programa para ingresar por teclado la longitud de los tres lados de un triángulo y luego listar qué tipo de triángulo es:
+- Equilátero: si los tres lados son iguales.
+- Isósceles: si dos de los tres lados son iguales.
+- Escaleno: si los tres lados son distintos entre sí.
 
+#include <iostream>
+using namespace std;
+
+int main() {
+int Lado1, Lado2, Lado3;
+cout << "Ingrese los lados del triangulo: " << endl;
+cout << "Lado 1: ";
+cin >> Lado1;
+cout << "Lado 2: ";
+cin >> Lado2;
+cout << "Lado 3: ";
+cin >> Lado3;
+
+if (Lado1 == Lado2 && Lado2 == Lado3){
+cout << "Es un Equilatero";
+}else if (Lado1 == Lado2 || Lado2 == Lado3 || Lado1 == Lado3){
+cout << "Es un Isoseles";
+}else {
+cout << "Es un Escaleno";
+}
+
+return 0;
+}
+*/
+/* EJERCICIO 9: 
+Hacer un programa para ingresar tres números y listar el máximo de ellos. 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int Num1, Num2, Num3;
+cout << "Ingrese tres numeros diferentes: " << endl;
+cout << "Primer numero: ";
+cin >> Num1;
+cout << "Numero 2: ";
+cin >> Num2;
+cout <<  "Numero 3: ";
+cin >> Num3;
+
+if (Num1>Num2 && Num2>Num3){
+cout << "El numero " << Num1 << " es mayor que el resto";
+}else if (Num2>Num3){
+cout << "El numero " << Num2 << " es mayor que el resto"; 
+}else {
+cout << "El numero " << Num3 << " es mayor que le resto";
+}
+
+return 0;
+}*/
+
+/*EJERCICIO 10:
+ Hacer un programa para ingresar cinco números y listar el máximo y el mínimo de ellos.*/
+#include <iostream>
+using namespace std;
+
+int main() {
+	int Num1, Num2, Num3, Num4, Num5;
+	cout << "Ingrese 5 numeros: " << endl;
+	cout << "Primer numero: ";
+	cin >> Num1;
+	cout << "Segundo numero: ";
+	cin >> Num2;
+	cout <<  "Tercer numero: ";
+	cin >> Num3;
+	cout <<  "Cuarto numero: ";
+	cin >> Num4;
+	cout <<  "Quinto numero: ";
+	cin >> Num5;
+	
+	int Maximo = Num1;
+	int Minimo = Num1;
+	
+	if(Num2 > Maximo){
+		Maximo=Num2;
+	}
+	if(Num2<Maximo){
+		Minimo = Num2;
+	}
+	if(Num3 > Maximo){
+		Maximo=Num3;
+	}
+	if(Num3<Maximo){
+		Minimo = Num3;
+	}
+	if(Num4 > Maximo){
+		Maximo=Num4;
+	}
+	if(Num4<Maximo){
+		Minimo = Num4;
+	}
+	if(Num5 > Maximo){
+		Maximo=Num5;
+	}
+	if(Num5<Maximo){
+		Minimo = Num5;
+	}
+	cout << "El maximo de los cinco numeros es: " << Maximo << endl;
+	cout << "El minumo de los cinco numero es: " << Minimo;
+	
+	return 0;
+}

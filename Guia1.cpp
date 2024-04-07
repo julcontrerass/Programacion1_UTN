@@ -1,9 +1,9 @@
 
 
-//EJERCICIO 1:
-//Hacer un programa para ingresar por teclado la cantidad de
-//horas trabajadas por un operario y el valor que se le paga por
-//hora trabajada y listar por pantalla el sueldo que le corresponda.
+// EJERCICIO 1:
+// Hacer un programa para ingresar por teclado la cantidad de
+// horas trabajadas por un operario y el valor que se le paga por
+// hora trabajada y listar por pantalla el sueldo que le corresponda.
 /*#include <iostream>
 
 using namespace std;
@@ -22,13 +22,13 @@ int main(){
    return 0;
 
 }*/
-//EJERCICIO 2:
+// EJERCICIO 2:
 
 // Una concesionaria de autos paga a los vendedores un sueldo fijo
-//de $5000 más $700 de premio por cada auto vendido. Hacer un programa
-//que permita ingresar por teclado la cantidad de autos vendidos por un
-//vendedor y luego informar por pantalla el sueldo total a pagar.
-//Ejemplo. Si la cantidad de autos vendidos fuera 4 entonces el sueldo total a pagar es de $7800.
+// de $5000 mï¿½s $700 de premio por cada auto vendido. Hacer un programa
+// que permita ingresar por teclado la cantidad de autos vendidos por un
+// vendedor y luego informar por pantalla el sueldo total a pagar.
+// Ejemplo. Si la cantidad de autos vendidos fuera 4 entonces el sueldo total a pagar es de $7800.
 /*#include <iostream>
 
 using namespace std;
@@ -45,13 +45,11 @@ int main(){
 
 }*/
 
+// EJERCICIO 4:
 
-//EJERCICIO 4:
-
-//Hacer un programa para ingresar por teclado la cantidad de asientos totales en un avión y la cantidad de pasajes ocupados y luego
-//calcular e informar el porcentaje de ocupación y el porcentaje de no ocupación del mismo.
-//Ejemplo si el avión tiene 200 asientos totales y se vendieron 80 pasajes, el porcentaje de ocupación que se informará será de un 40% y el porcentaje de no ocupación será de un 60%.
-
+// Hacer un programa para ingresar por teclado la cantidad de asientos totales en un aviï¿½n y la cantidad de pasajes ocupados y luego
+// calcular e informar el porcentaje de ocupaciï¿½n y el porcentaje de no ocupaciï¿½n del mismo.
+// Ejemplo si el aviï¿½n tiene 200 asientos totales y se vendieron 80 pasajes, el porcentaje de ocupaciï¿½n que se informarï¿½ serï¿½ de un 40% y el porcentaje de no ocupaciï¿½n serï¿½ de un 60%.
 
 /*#include <iostream>
 
@@ -75,10 +73,10 @@ int main(){
 
 }*/
 
-//EJERCICIO 5:
-//Un comercio vende tres marcas de alfajores distintas A, B y C. Hacer un programa para ingresar por teclado la
-//cantidad de alfajores vendidos de cada una de las tres marcas y luego se informe el porcentaje de ventas para cada una de ellas.
-//Ejemplo. Si se ingresa 100, 25 y 75  como cantidades vendidas entonces el programa calculará e informará A: 50%, B: 12,50% y C: 37,50%.
+// EJERCICIO 5:
+// Un comercio vende tres marcas de alfajores distintas A, B y C. Hacer un programa para ingresar por teclado la
+// cantidad de alfajores vendidos de cada una de las tres marcas y luego se informe el porcentaje de ventas para cada una de ellas.
+// Ejemplo. Si se ingresa 100, 25 y 75  como cantidades vendidas entonces el programa calcularï¿½ e informarï¿½ A: 50%, B: 12,50% y C: 37,50%.
 
 /*#include <iostream>
 
@@ -105,12 +103,12 @@ int main(){
 
 }*/
 
-//EJERCICIO 6:
-//Hacer un programa para que un comercio ingrese por teclado la recaudación en pesos para cada
-//una de las cuatro semanas del mes. El programa debe listar la recaudación promedio por semana
-//y el porcentaje de recaudación por semana.
+// EJERCICIO 6:
+// Hacer un programa para que un comercio ingrese por teclado la recaudaciï¿½n en pesos para cada
+// una de las cuatro semanas del mes. El programa debe listar la recaudaciï¿½n promedio por semana
+// y el porcentaje de recaudaciï¿½n por semana.
 
-//Ejemplo. Si se ingresa $1600, $1200, $4800 y $400 se listará como recaudación promedio $2000 y como porcentajes por semana: 20%, 15%, 60% y 5%.
+// Ejemplo. Si se ingresa $1600, $1200, $4800 y $400 se listarï¿½ como recaudaciï¿½n promedio $2000 y como porcentajes por semana: 20%, 15%, 60% y 5%.
 /*#include <iostream>
 
 using namespace std;
@@ -139,11 +137,11 @@ int main(){
 
 }*/
 
-//EERCICIO 7:
-//Hacer un programa para ingresar por teclado el importe de una venta y el
-//porcentaje de descuento aplicada a la misma y luego informar por pantalla el importe a pagar.
-//Ejemplo A. Si el importe de la venta es $1200 y el descuento es el 15% entonces el total a pagar será de $1020.
-//Ejemplo B. Si el importe de la venta es $800 y el descuento es el 0% entonces el total a pagar será de $800.
+// EERCICIO 7:
+// Hacer un programa para ingresar por teclado el importe de una venta y el
+// porcentaje de descuento aplicada a la misma y luego informar por pantalla el importe a pagar.
+// Ejemplo A. Si el importe de la venta es $1200 y el descuento es el 15% entonces el total a pagar serï¿½ de $1020.
+// Ejemplo B. Si el importe de la venta es $800 y el descuento es el 0% entonces el total a pagar serï¿½ de $800.
 /*#include <iostream>
 
 using namespace std;
@@ -164,12 +162,12 @@ int main(){
 
 }*/
 
-//EJERCICIO 8:
-//Hacer un programa para ingresar por teclado el importe de una venta sin el descuento y el importe de esa misma
-//venta con el descuento aplicado y luego informar por pantalla el porcentaje de descuento aplicada a la misma.
-//Ejemplo A. Si el importe de la venta sin descuento es $1500 y el importe de la venta con descuento es $1200 entonces el porcentaje de descuento aplicado fue el 20%.
-//Importante: Le sugerimos que haga una prueba con este ejemplo, ya que muchos lo resuelven y concluyen que el descuento es el 80%. Eso NO es el descuento. Si el descuento fuera de 80% entonces una venta de $1500 se cobraría tan solo $300.
-//Ejemplo B. Si el importe de la venta sin descuento es $500 y el importe de la venta con descuento es $500 entonces el porcentaje de descuento aplicado fue el 0%.
+// EJERCICIO 8:
+// Hacer un programa para ingresar por teclado el importe de una venta sin el descuento y el importe de esa misma
+// venta con el descuento aplicado y luego informar por pantalla el porcentaje de descuento aplicada a la misma.
+// Ejemplo A. Si el importe de la venta sin descuento es $1500 y el importe de la venta con descuento es $1200 entonces el porcentaje de descuento aplicado fue el 20%.
+// Importante: Le sugerimos que haga una prueba con este ejemplo, ya que muchos lo resuelven y concluyen que el descuento es el 80%. Eso NO es el descuento. Si el descuento fuera de 80% entonces una venta de $1500 se cobrarï¿½a tan solo $300.
+// Ejemplo B. Si el importe de la venta sin descuento es $500 y el importe de la venta con descuento es $500 entonces el porcentaje de descuento aplicado fue el 0%.
 
 /*#include <iostream>
 
@@ -192,12 +190,12 @@ int main(){
 
 }*/
 
-//Ejercicio 9:
-//Hacer un programa para ingresar por teclado una cantidad de minutos y mostrar
-//por pantalla a cuantas horas y minutos equivalen.
-//Ejemplo A: si se ingresan 380 minutos el programa mostrará por pantalla que equivalen a 6 horas y 20 minutos.
-//Ejemplo B: si se ingresan 720 minutos el programa mostrará por pantalla que equivalen a 12 horas y 0 minutos.
-//Ejemplo C: si se ingresan 50 minutos el programa mostrará por pantalla que equivalen a 0 horas y 50 minutos
+// Ejercicio 9:
+// Hacer un programa para ingresar por teclado una cantidad de minutos y mostrar
+// por pantalla a cuantas horas y minutos equivalen.
+// Ejemplo A: si se ingresan 380 minutos el programa mostrarï¿½ por pantalla que equivalen a 6 horas y 20 minutos.
+// Ejemplo B: si se ingresan 720 minutos el programa mostrarï¿½ por pantalla que equivalen a 12 horas y 0 minutos.
+// Ejemplo C: si se ingresan 50 minutos el programa mostrarï¿½ por pantalla que equivalen a 0 horas y 50 minutos
 
 /*#include <iostream>
 
@@ -216,12 +214,11 @@ int main(){
    return 0;
 
 }*/
-//EJERCICIO 10:
-//Hacer un programa para ingresar por teclado una cantidad de horas y mostrar por pantalla a cuantos días y horas equivalen.
-//Ejemplo A: si se ingresan 26 horas el programa mostrará por pantalla que equivalen a 1 día y 2 horas.
-//Ejemplo B: si se ingresan 72 horas el programa mostrará por pantalla que equivalen a 3 días y 0 horas.
-//Ejemplo C: si se ingresan 20 horas el programa mostrará por pantalla que equivalen a 0 días y 20 horas.
-
+// EJERCICIO 10:
+// Hacer un programa para ingresar por teclado una cantidad de horas y mostrar por pantalla a cuantos dï¿½as y horas equivalen.
+// Ejemplo A: si se ingresan 26 horas el programa mostrarï¿½ por pantalla que equivalen a 1 dï¿½a y 2 horas.
+// Ejemplo B: si se ingresan 72 horas el programa mostrarï¿½ por pantalla que equivalen a 3 dï¿½as y 0 horas.
+// Ejemplo C: si se ingresan 20 horas el programa mostrarï¿½ por pantalla que equivalen a 0 dï¿½as y 20 horas.
 
 /*#include <iostream>
 
@@ -241,10 +238,10 @@ int main(){
 
 }*/
 
-//EJERCICIO 11
-//Hacer un programa para ingresar por teclado una cantidad de minutos y mostrar por pantalla a cuántos días, horas y minutos equivalen.
-//Ejemplo A: si se ingresan 1520 minutos el programa mostrará por pantalla que equivalen a 1 día, 1 hora y 20 minutos.
-//Ejemplo B: si se ingresan 480 minutos el programa mostrará por pantalla que equivalen a 0 día, 8 horas y 0 minutos.
+// EJERCICIO 11
+// Hacer un programa para ingresar por teclado una cantidad de minutos y mostrar por pantalla a cuï¿½ntos dï¿½as, horas y minutos equivalen.
+// Ejemplo A: si se ingresan 1520 minutos el programa mostrarï¿½ por pantalla que equivalen a 1 dï¿½a, 1 hora y 20 minutos.
+// Ejemplo B: si se ingresan 480 minutos el programa mostrarï¿½ por pantalla que equivalen a 0 dï¿½a, 8 horas y 0 minutos.
 
 /*#include <iostream>
 
@@ -265,15 +262,15 @@ int main(){
 
 }*/
 
-//EJERCICIO 12:
-//12:Una granja vende la caja de 12 unidades a $1000 y cada huevo suelto a $120.
+// EJERCICIO 12:
+// 12:Una granja vende la caja de 12 unidades a $1000 y cada huevo suelto a $120.
 
-//Hacer un programa para ingresar la cantidad de huevos que compra un cliente y mostrar por pantalla el importe total a pagar.
-//Recordatorio. Por cada 12 huevos se debe calcular una caja y el excedente se calcula como suelto.
-//Ejemplo A. Si la cantidad ingresada son 15 huevos, el programa calculará 1 caja y 3 sueltos, es decir $1000 + $120 x 3 = $1360.
-//Ejemplo B. Si la cantidad ingresada son 28 huevos el programa calculará 2 cajas y 4 sueltos, es decir $1000 x 2 + $120 x 4 = $2480.
-//Ejemplo C. Si la cantidad ingresada son 8 huevos, el programa calculará: 0 cajas y 8 sueltos, es decir $120 x 8 = $960.
-//Ejemplo D. Si la cantidad ingresada son 200 huevos, el programa calculará: 16 cajas y 8 sueltos, es decir $1000 x 16 + $120 x 8 = $16960.
+// Hacer un programa para ingresar la cantidad de huevos que compra un cliente y mostrar por pantalla el importe total a pagar.
+// Recordatorio. Por cada 12 huevos se debe calcular una caja y el excedente se calcula como suelto.
+// Ejemplo A. Si la cantidad ingresada son 15 huevos, el programa calcularï¿½ 1 caja y 3 sueltos, es decir $1000 + $120 x 3 = $1360.
+// Ejemplo B. Si la cantidad ingresada son 28 huevos el programa calcularï¿½ 2 cajas y 4 sueltos, es decir $1000 x 2 + $120 x 4 = $2480.
+// Ejemplo C. Si la cantidad ingresada son 8 huevos, el programa calcularï¿½: 0 cajas y 8 sueltos, es decir $120 x 8 = $960.
+// Ejemplo D. Si la cantidad ingresada son 200 huevos, el programa calcularï¿½: 16 cajas y 8 sueltos, es decir $1000 x 16 + $120 x 8 = $16960.
 
 /*#include <iostream>
 
@@ -294,4 +291,19 @@ int main(){
    return 0;
 
 }*/
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+    int a = 10;
+    int b = 3;
+    a++;
+    int b += a;
+    int r = b / 2;
+    b += r;
+
+    cout << r << a << b;
+    return 0;
+}
