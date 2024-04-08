@@ -22,7 +22,58 @@ int main(){
    return 0;
 
 }*/
-// EJERCICIO 2:
+
+/*EJERCICIO 2:
+Hacer un programa que solicite por teclado que se ingresen dos números y luego guardarlos en dos variables distintas. A continuación se deben intercambiar mutuamente los valores en ambas variables y mostrarlos por pantalla.
+
+Ejemplo: Suponiendo que se ingresan 3 y 8 como valores y que la variables usadas son A y B, entonces A=3 y B=8, pero luego debe quedar A=8 y B=3.
+
+OPCION 1:
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int Num1, Num2;
+	
+	cout << "Ingrese un numero: ";
+	cin >> Num1;
+	cout << "Ingrese otro numero: ";
+	cin >> Num2;
+	
+	int Num3 = Num1;
+	Num1 = Num2;
+	Num2 = Num3;
+	
+	cout << "Los nuevos valores serian: " << Num1 << " y " << Num2; 
+	
+	return 0;
+}
+
+OPCION 2:
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int Num1, Num2;
+	
+	cout << "Ingrese un numero: ";
+	cin >> Num1;
+	cout << "Ingrese otro numero: ";
+	cin >> Num2;
+	
+	Num1 = Num1 + Num2;
+	Num2 = Num1 - Num2;
+	Num1 = Num1 - Num2;
+	
+	cout << "La ubicacion nueva seria: " << Num1 << " y " << Num2;
+	return 0;
+}
+*/
+// EJERCICIO 3:
 
 // Una concesionaria de autos paga a los vendedores un sueldo fijo
 // de $5000 mï¿½s $700 de premio por cada auto vendido. Hacer un programa
@@ -291,19 +342,98 @@ int main(){
    return 0;
 
 }*/
+
+/*EJERCICIO 13:
+Hacer un programa para un cajero automático para ingresar un importe a retirar y convertir el mismo en la cantidad de billetes de $1.000, $500, $200 y $100 a entregar.
+
+Ejemplo A: Si el importe a retirar es $2500 se mostrará por pantalla que se deberán entregar 2 billetes de $1.000, 1 billete de $500,  0 billetes de $200 y 0 billetes de $100.
+
+Ejemplo B: Si el importe a retirar es $3400 se mostrará por pantalla que se deberán entregar 3 billetes de $1.000, 2 billetes de $200, 0 billetes de $500 y 0 billetes de $100.
+
+Ejemplo C: Si el importe a retirar es $300 se mostrará por pantalla que se deberán entregar 1 billete de $200, 1 billete de $100, 0 billetes de $1.000 y 0 billetes de $500.
+
+Recordatorio. Considerar en todos los casos que el importe a retirar es en todos los casos múltiplo de $100 ya que el cajero no cuenta con billetes de $50, $20 o $10.	
+
 #include <iostream>
 
 using namespace std;
 
-int main()
-{
-    int a = 10;
-    int b = 3;
-    a++;
-    int b += a;
-    int r = b / 2;
-    b += r;
+int main(){
+	int Importe;
+	cout << "Ingrese el importe a retirar: ";
+	cin >> Importe;
+	
+	int Cantidad1000 = Importe/1000;
+	Importe = Importe % 1000;
+	
+	int Cantidad500= Importe/500;
+	Importe = Importe % 500;
+	
+	int Cantidad200 = Importe/200;
+	Importe = Importe % 200;
+	
+	int Cantidad100 = Importe/100;
+	
+	cout << "Se debera entregar: " << endl;
+	cout << Cantidad1000 << " billetes de 1000" << endl;
+	cout << Cantidad500 << " billetes de 500" << endl;
+	cout << Cantidad200 << " billetes de 200" << endl;
+	cout << Cantidad100 << " billetes de 100";
+	return 0;
+	
+}*/
+/*
+EJERCICIO 14:
+Hacer un programa para ingresar el importe de una compra y el descuento a aplicar. Listar por pantalla, el importe sin descuento, el descuento aplicado y el importe total a cobrar.
 
-    cout << r << a << b;
-    return 0;
-}
+Ejemplo: se ingresa importe 4500, descuento 40; se deberá mostrar
+
+Importe: 4500, Descuento: 1800, total: 2700.
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int Importe, Descuento;
+	cout << "Ingrese el importe de la compra: ";
+	cin >> Importe;
+	
+	cout << "Ingrese el descuento a aplicar: ";
+	cin >> Descuento;
+	
+	int DescuentoCalculado = (Importe * Descuento) / 100;
+	int Total = Importe - DescuentoCalculado;
+	
+	cout << "Importe: " << Importe << endl; 
+	cout << "Descuento: " << DescuentoCalculado << endl;
+	cout << "Precio Final: " << Total;
+	return 0;
+	
+}*/
+
+/* EJERCICIO 15:
+La amplitud térmica es la diferencia entre la temperatura máxima y la temperatura mínima en una zona y tiempo determinado. Dada la temperatura máxima y la temperatura mínima de San Fernando de ayer, calcular y mostrar la amplitud térmica.
+
+NOTA: El usuario ingresará como temperatura máxima un valor mayor o igual al de la temperatura mínima.
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int TempMaxima, TempMinima;
+	
+	cout << "Ingrese la temperatura maxima: ";
+	cin >> TempMaxima;
+	
+	cout << "Ingrese la temperatura minima: ";
+	cin >> TempMinima;
+	
+	int AmplitudTermica = TempMaxima - TempMinima;
+	
+	cout << "La amplitud termica es: " << AmplitudTermica;
+	
+	return 0;
+	
+}*/

@@ -208,7 +208,7 @@ return 0;
 }
 */
 /* EJERCICIO 9: 
-Hacer un programa para ingresar tres números y listar el máximo de ellos. 
+Hacer un programa para ingresar tres números y listar el máximo de ellos. 40
 
 #include <iostream>
 using namespace std;
@@ -235,7 +235,8 @@ return 0;
 }*/
 
 /*EJERCICIO 10:
- Hacer un programa para ingresar cinco números y listar el máximo y el mínimo de ellos.*/
+ Hacer un programa para ingresar cinco números y listar el máximo y el mínimo de ellos
+
 #include <iostream>
 using namespace std;
 
@@ -284,4 +285,69 @@ int main() {
 	cout << "El minumo de los cinco numero es: " << Minimo;
 	
 	return 0;
-}
+}.*/
+
+/*  EJERCCICIO 11
+Hacer un programa para ingresar cinco números y listar cuantos de esos cinco números son positivos, cuantos son negativos y cuantos son iguales a 0.
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n1, n2,n3, n4, n5;
+	cout << "Ingrese 5 numeros: " << endl;
+	cout << "Numero 1: ";
+	cin >> n1;
+	cout << "Numero 2: ";
+	cin >> n2;
+	cout << "Numero 3: ";
+	cin >> n3;
+	cout << "Numero 4: ";
+	cin >> n4;
+	cout << "Numero 5: ";
+	cin >> n5;
+	
+	int Positivo = 0;
+	int Negativo = 0;
+	
+	if (n1 > Positivo){
+		cout << n1 << " Es positivo" << endl;
+	} else if (n1 < Negativo){
+		cout << n1 << " Es negativo" << endl;
+	}else {
+		cout << n1 << " Es igual a 0" << endl;
+	}
+	
+	if (n2 > Positivo){
+		cout << n2 << " Es positivo" << endl;
+	} else if (n2 < Negativo){
+		cout << n2 << " Es negativo" << endl; 
+	}else {
+		cout << n2 << " Es igual a 0" << endl;
+	}
+	
+	if (n3 > Positivo){
+		cout << n3 << " Es positivo" << endl;
+	} else if (n3 < Negativo){
+		cout << n3 << " Es negativo" << endl;
+	}else {
+		cout << n3 << " Es igual a 0" << endl; 
+	}
+	
+	if (n4 > Positivo){
+		cout << n4 << " Es positivo" << endl;
+	} else if (n4 < Negativo){
+		cout << n4 << " Es negativo" << endl;
+	}else {
+		cout << n4 << " Es igual a 0" << endl;
+	}
+	
+	if (n5 > Positivo){
+		cout << n5 << " Es positivo" << endl;
+	} else if (n5 < Negativo){
+		cout << n5 << " Es negativo" << endl;
+	}else {
+		cout << n5 << " Es igual a 0" << endl;
+	}
+
+	return 0;
+}*/
