@@ -207,7 +207,7 @@ cout << "Es un Escaleno";
 return 0;
 }
 */
-/* EJERCICIO 9: 
+/* EJERCICIO 9:
 Hacer un programa para ingresar tres números y listar el máximo de ellos. 40
 
 #include <iostream>
@@ -226,7 +226,7 @@ cin >> Num3;
 if (Num1>Num2 && Num2>Num3){
 cout << "El numero " << Num1 << " es mayor que el resto";
 }else if (Num2>Num3){
-cout << "El numero " << Num2 << " es mayor que el resto"; 
+cout << "El numero " << Num2 << " es mayor que el resto";
 }else {
 cout << "El numero " << Num3 << " es mayor que le resto";
 }
@@ -253,10 +253,10 @@ int main() {
 	cin >> Num4;
 	cout <<  "Quinto numero: ";
 	cin >> Num5;
-	
+
 	int Maximo = Num1;
 	int Minimo = Num1;
-	
+
 	if(Num2 > Maximo){
 		Maximo=Num2;
 	}
@@ -283,7 +283,7 @@ int main() {
 	}
 	cout << "El maximo de los cinco numeros es: " << Maximo << endl;
 	cout << "El minumo de los cinco numero es: " << Minimo;
-	
+
 	return 0;
 }.*/
 
@@ -305,10 +305,10 @@ int main() {
 	cin >> n4;
 	cout << "Numero 5: ";
 	cin >> n5;
-	
+
 	int Positivo = 0;
 	int Negativo = 0;
-	
+
 	if (n1 > Positivo){
 		cout << n1 << " Es positivo" << endl;
 	} else if (n1 < Negativo){
@@ -316,23 +316,23 @@ int main() {
 	}else {
 		cout << n1 << " Es igual a 0" << endl;
 	}
-	
+
 	if (n2 > Positivo){
 		cout << n2 << " Es positivo" << endl;
 	} else if (n2 < Negativo){
-		cout << n2 << " Es negativo" << endl; 
+		cout << n2 << " Es negativo" << endl;
 	}else {
 		cout << n2 << " Es igual a 0" << endl;
 	}
-	
+
 	if (n3 > Positivo){
 		cout << n3 << " Es positivo" << endl;
 	} else if (n3 < Negativo){
 		cout << n3 << " Es negativo" << endl;
 	}else {
-		cout << n3 << " Es igual a 0" << endl; 
+		cout << n3 << " Es igual a 0" << endl;
 	}
-	
+
 	if (n4 > Positivo){
 		cout << n4 << " Es positivo" << endl;
 	} else if (n4 < Negativo){
@@ -340,7 +340,7 @@ int main() {
 	}else {
 		cout << n4 << " Es igual a 0" << endl;
 	}
-	
+
 	if (n5 > Positivo){
 		cout << n5 << " Es positivo" << endl;
 	} else if (n5 < Negativo){
@@ -351,3 +351,144 @@ int main() {
 
 	return 0;
 }*/
+
+/* EJERCICIO 12:
+Hacer un programa para leer tres números diferentes y determinar e informar el número del medio.
+Sugerimos probar CADA UNA de las siguientes 6 combinaciones.
+N1=8, N2=6, N3=10. Valor del medio: 8. N1=8, N2=10, N3=6. Valor del medio: 8
+N1=6, N2=8, N3=10. Valor del medio: 8. N1=10, N2=8, N3=6. Valor del medio: 8
+N1=6, N2=10, N3=8. Valor del medio: 8. N1=10, N2=6, N3=8. Valor del medio: 8
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int N1, N2, N3;
+
+	cout << "Ingrese tres numeros: " << endl;
+	cout << "El primer numero: ";
+	cin >> N1;
+	cout << "El segundo numero: ";
+	cin >> N2;
+	cout << "El tercer numero: ";
+	cin >> N3;
+
+	if (N1>N2 && N1<N3 || N1<N2 && N1>N3) {
+		cout << "El valor del medio es: " << N1;
+	}else if (N2>N1 && N2<N3 || N2<N1 && N2>N3){
+		cout << "El valor del medio es: " << N2;
+	}else {
+		cout << "El valor del medio es: " << N3;
+	}
+	return 0;
+}*/
+/*EJERCICIO 13:
+Hacer un programa para ingresar tres números distintos y listarlos ordenados de menor a mayor.
+Sugerimos probar CADA UNA de las siguientes 6 combinaciones.
+Si N1=8, N2=6, N3=10 ó  N1=8, N2=10, N3=6. Se muestra: 6, 8, 10.
+Si N1=6, N2=8, N3=10 ó  N1=10, N2=8, N3=6. Se muestra: 6, 8, 10.
+Si N1=6, N2=10, N3=8 ó  N1=10, N2=6, N3=8. Se muestra: 6, 8, 10.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N1, N2, N3, Menor, Medio, Mayor;
+    cout << "Ingrese tres numeros: " << endl;
+	cout << "El primer numero: ";
+	cin >> N1;
+	cout << "El segundo numero: ";
+	cin >> N2;
+	cout << "El tercer numero: ";
+	cin >> N3;
+	if (N1<N2 && N1<N3){
+        Menor = N1;
+        if (N2<N3){
+                Medio = N2;
+                Mayor = N3;
+        }else {
+            Medio = N3;
+			Mayor = N2;
+        }
+	} else if(N2<N1 && N2<N3){
+	    Menor = N2;
+	    if(N1<N3){
+			 Medio = N1;
+			 Mayor = N3;
+	}else{
+	    Medio = N3;
+	    Mayor = N1;
+	}}else {
+	    Menor = N3;
+		if (N1<N2){
+			 Medio = N1;
+			 Mayor = N2;
+
+		}else{
+			 Medio = N2;
+			 Mayor = N1;
+		}
+	}
+	cout << "El numero menor es: " << Menor << endl;
+	cout << "El del medio es: " << Medio << endl;
+	cout << "El mayor es: " << Mayor;
+	return 0;
+}*/
+
+//hacer programa que permita calcular el costo total de un proyecto. pedir cantidad de horas (int), tipo de lenguaje (char) y urgente o no (bool)
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+
+    int horas, precio;
+    char lenguaje;
+    bool esUrgente;
+
+    cout << "cuantas horas vas a contratar? ";
+    cin >> horas;
+    cout << "para c++ ingresa 1. Para c hashtag ingresa 2. Para python ingresa 3. Para go ingresa 4";
+    cin >> lenguaje;
+
+    switch(lenguaje){
+    case '1':
+        cout << "seleccionaste c++" << endl;
+        precio = horas * 7500;
+        break;
+
+    case '2':
+        cout << "seleccionaste c hashtag" << endl;
+        precio = horas * 6100;
+        break;
+    case '3':
+        cout << "seleccionaste Python" << endl;
+        precio = horas * 5400;
+        break;
+    case '4':
+        cout << "seleccionaste go" << endl;
+        precio = horas * 5000;
+        break;
+    default:
+        cout << "opcion invalida" << endl;
+        break;
+    }
+
+
+    cout << "es urgente? si es urgente selecciona 1, sino 0";
+    cin >> esUrgente;
+    if (esUrgente){
+        cout << "el trabajo es urgente. " << endl;
+        precio = precio * 1.20;
+    }
+    else {
+        cout << "el trabajo no es urgente. " << endl;
+    }
+
+    cout << "el precio final es de " << precio;
+
+
+    return 0;
+}
