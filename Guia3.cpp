@@ -241,6 +241,7 @@ int main(){
 
     return 0;
 }
+//EJERCICIO 9
 #include <iostream>
 
 using namespace std;
@@ -259,6 +260,172 @@ int main() {
         }
     }
     cout << "El maximo es: " << maximo;
+
+    return 0;
+}*/
+/* EJERCICIO 10
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    float n;
+    cout << "Ingresa 10 numeros: ";
+    cin >> n;// 0
+    float maximo = n;
+    //int Ubi;
+    int Ubi = 0 //inicia desde uno porque ya se solicito un numero al inicio
+
+    for (int i = 0; i < 4; i++) {
+        cin >> n;
+        if (maximo < n) {
+            maximo = n;
+            //Ubi = i + 1;
+            Ubi ++ // 1
+        }
+    }
+    cout << "El maximo es: " << maximo << endl;
+    cout << "La ubicacion es: " << Ubi;
+
+    return 0;
+}*/
+
+/* EJERCICIO 11:
+Hacer un programa para ingresar una lista de 10 números, luego informar el máximo y el mínimo.
+Ejemplo A: 10, 20, -5, 30,-15, 5, 42, 0, 22, -13. Se listará Máximo 42 Mínimo -15.
+Ejemplo B: 10, 20, 5, 30, 15, 5, 42, 8, 22, 13. Se listará Máximo 42 Mínimo 5.
+Ejemplo C: -10, -20, -5, -30, -15, -12, -42, -8, -22, -13. Se listará Máximo -5 Mínimo -42.
+Observe que los tres ejemplos dejan en claro que la suposición de que el máximo “seguramente” es un positivo y el mínimo
+“seguramente” es un negativo, queda totalmente descartada.
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int N;
+    cout << "Ingresa 10 numeros: ";
+    cin >> N;
+
+    int Max = N;
+    int Min = N;
+    for (int i=0; i<4; i++){
+        cout << "Ingrese un numero: ";
+        cin >> N;
+
+        if (N>Max){
+            Max=N;
+        }else if(N<Min){
+            Min=N;
+        }
+    }
+    cout << "El maximo es el: "<< Max << endl;
+    cout << "El minimo es el: "<< Min;
+    return 0;
+}
+/*EJERCICIO 12:
+Hacer un programa para ingresar una lista de 10 números e informar el máximo de los negativos y el mínimo de los positivos.
+Ejemplo: 5, 8, 12, 2, -10, 15, -20, 8, -3, 24. Máximo Negativo -3. Mínimo Positivo 2
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num;
+    cin >> num;
+    int MinPos = num;
+    int MaxNeg = num;
+
+    for (int i = 1; i<10; i++){
+        cin >> num;
+        if (num>0){
+            if(num<MinPos){
+                MinPos = num;
+            }
+        }else{
+            MaxNeg = num;
+        }
+    }
+
+
+    cout << "Minimo Positivo: "<< MinPos << endl;
+    cout << "Maximo Negativo: "<<MaxNeg;
+
+    return 0;
+}*/
+/* EJERCICIO 13:
+Dada una lista de 10 números informar cual es el máximo de los pares.
+Ejemplo A: 2, 10, 20, 8, 25, 13, 36, - 8, -5, 20 se informa máximo: 36
+Ejemplo B 5, -13, 23, 81, -55, -13, 55, 4, 15 ,-20 Se informa máximo: 4
+Ejemplo C: -5, -13, -20, -8, -55, -13, -55, -14, -15, -20 se informa máximo: -8
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num;
+    cin >> num;
+
+    int Max = num;
+
+    for (int i=1; i<10; i++){
+        cin >> num;
+
+        if (num % 2 == 0){
+            if(num>Max){
+                    Max = num;
+            }
+        }
+    }
+    cout << "EL numero par mayo es: " << Max;
+    return 0;
+}*/
+/* EJERCICIO 14
+Dada una lista de 7 números informar cual es el primer, el segundo, el anteúltimo y el último número impar ingresado.
+Ejemplo 8, 4, -5, 7, 9, 18, 5 se informa: Primer impar: -5, Segundo impar: 7, Anteúltimo impar: 9 y Último impar: 5.
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num;
+    int prim = 0, seg = 0, ante = 0, ultimo = 0;
+    int contador = 0;
+
+    for (int i = 0; i < 7; i++) {
+        cin >> num;
+        if (num % 2 != 0) {
+            contador++;
+            if (contador == 1) {
+                prim = num;
+            } else if (contador == 2) {
+                seg = num;
+            }else{
+                int temp = ante;
+                ante = num;
+                if(contador > 3){
+                    ultimo = temp;
+                }
+            }
+        }
+    }
+
+    if(contador >= 3){
+        cout << "el primer impar es: " << prim << endl;
+        cout << "el segundo impar es: " << seg << endl;
+        cout << "el ante último impar es: " << ultimo << endl;
+        cout << "el ultimo impar es: " << ante << endl;
+    }
+    else{
+        cout << "no se ingresaron suficientes impares";
+    }
 
     return 0;
 }*/
