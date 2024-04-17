@@ -461,3 +461,62 @@ int main()  {
 
     return 0;
 }*/
+/* EJERCICIO 16:
+Hacer un programa para ingresar 5 números, luego informar los 2 mayores valores ingresados,
+ aclarando cual es el máximo y cuál el que le sigue.
+Ejemplo A: 10, 8, 12, 14, 3 el resultado será 14 y 12.
+Ejemplo B: 14, 8, 12, 14 ,3 el resultado será 14 y 14.
+Ejemplo C: -4, -8, -12, -20, -2 el resultado será -2 y -4
+Ejemplo D: 100, 20, 5, - 15, 70, el resultado será 100 y 70
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()  {
+    int num, max1, max2;
+    cout << "Ingrese el primer número: ";
+    cin >> num;
+    max1 = num;
+    max2 = num;
+
+    for (int i = 1; i < 5; ++i) {
+            cout << "Ingrese el siguiente número: ";
+            cin >> num;
+
+        if (num > max1) {
+            max2 = max1;
+            max1 = num;
+        } else if (num > max2) {
+            max2 = num;
+        }
+    }
+    cout << " El numero maximo es: " << max1 << " El siguiente es: " << max2;
+    return 0;
+}*/
+
+/* EJERCICIO 17:
+Hacer un programa para ingresar un número y luego informar todos los divisores de ese número.
+Ejemplo A. Si se ingresa 6 se listarán: 1, 2, 3 y 6
+Ejemplo B. Si se ingresa 9 se listarán: 1, 3 y 9.
+Ejemplo 3. Si se ingresa 11 se listarán 1 y 11.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+
+    cout << "Ingrese un numero: " << endl;
+    cin >> num;
+
+    cout << "Los divisores de " << num << " son: " << endl;
+    for (int i = 1; i <= num; ++i) {
+        if (num % i == 0) {
+            cout << i << " ";
+        }
+    }
+    return 0;
+}*/
