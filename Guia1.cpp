@@ -24,7 +24,7 @@ int main(){
 }*/
 
 /*EJERCICIO 2:
-Hacer un programa que solicite por teclado que se ingresen dos números y luego guardarlos en dos variables distintas. A continuación se deben intercambiar mutuamente los valores en ambas variables y mostrarlos por pantalla.
+Hacer un programa que solicite por teclado que se ingresen dos nï¿½meros y luego guardarlos en dos variables distintas. A continuaciï¿½n se deben intercambiar mutuamente los valores en ambas variables y mostrarlos por pantalla.
 
 Ejemplo: Suponiendo que se ingresan 3 y 8 como valores y que la variables usadas son A y B, entonces A=3 y B=8, pero luego debe quedar A=8 y B=3.
 
@@ -344,15 +344,15 @@ int main(){
 }*/
 
 /*EJERCICIO 13:
-Hacer un programa para un cajero automático para ingresar un importe a retirar y convertir el mismo en la cantidad de billetes de $1.000, $500, $200 y $100 a entregar.
+Hacer un programa para un cajero automï¿½tico para ingresar un importe a retirar y convertir el mismo en la cantidad de billetes de $1.000, $500, $200 y $100 a entregar.
 
-Ejemplo A: Si el importe a retirar es $2500 se mostrará por pantalla que se deberán entregar 2 billetes de $1.000, 1 billete de $500,  0 billetes de $200 y 0 billetes de $100.
+Ejemplo A: Si el importe a retirar es $2500 se mostrarï¿½ por pantalla que se deberï¿½n entregar 2 billetes de $1.000, 1 billete de $500,ï¿½ 0 billetes de $200 y 0 billetes de $100.
 
-Ejemplo B: Si el importe a retirar es $3400 se mostrará por pantalla que se deberán entregar 3 billetes de $1.000, 2 billetes de $200, 0 billetes de $500 y 0 billetes de $100.
+Ejemplo B: Si el importe a retirar es $3400 se mostrarï¿½ por pantalla que se deberï¿½n entregar 3 billetes de $1.000, 2 billetes de $200, 0 billetes de $500 y 0 billetes de $100.
 
-Ejemplo C: Si el importe a retirar es $300 se mostrará por pantalla que se deberán entregar 1 billete de $200, 1 billete de $100, 0 billetes de $1.000 y 0 billetes de $500.
+Ejemplo C: Si el importe a retirar es $300 se mostrarï¿½ por pantalla que se deberï¿½n entregar 1 billete de $200, 1 billete de $100, 0 billetes de $1.000 y 0 billetes de $500.
 
-Recordatorio. Considerar en todos los casos que el importe a retirar es en todos los casos múltiplo de $100 ya que el cajero no cuenta con billetes de $50, $20 o $10.	
+Recordatorio. Considerar en todos los casos que el importe a retirar es en todos los casos mï¿½ltiplo de $100 ya que el cajero no cuenta con billetes de $50, $20 o $10.	
 
 #include <iostream>
 
@@ -386,7 +386,7 @@ int main(){
 EJERCICIO 14:
 Hacer un programa para ingresar el importe de una compra y el descuento a aplicar. Listar por pantalla, el importe sin descuento, el descuento aplicado y el importe total a cobrar.
 
-Ejemplo: se ingresa importe 4500, descuento 40; se deberá mostrar
+Ejemplo: se ingresa importe 4500, descuento 40; se deberï¿½ mostrar
 
 Importe: 4500, Descuento: 1800, total: 2700.
 
@@ -413,10 +413,10 @@ int main(){
 }*/
 
 /* EJERCICIO 15:
-La amplitud térmica es la diferencia entre la temperatura máxima y la temperatura mínima en una zona y tiempo determinado. Dada la temperatura máxima y la temperatura mínima de San Fernando de ayer, calcular y mostrar la amplitud térmica.
+La amplitud tï¿½rmica es la diferencia entre la temperatura mï¿½xima y la temperatura mï¿½nima en una zona y tiempo determinado. Dada la temperatura mï¿½xima y la temperatura mï¿½nima de San Fernando de ayer, calcular y mostrar la amplitud tï¿½rmica.
 
-NOTA: El usuario ingresará como temperatura máxima un valor mayor o igual al de la temperatura mínima.
-
+NOTA: El usuario ingresarï¿½ como temperatura mï¿½xima un valor mayor o igual al de la temperatura mï¿½nima.
+*/
 #include <iostream>
 
 using namespace std;
@@ -436,4 +436,4 @@ int main(){
 	
 	return 0;
 	
-}*/
+}
