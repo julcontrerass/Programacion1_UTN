@@ -75,7 +75,7 @@ int main(){
     return 0;
 }*/
 
-/* EJERCICIO 3:
+/* EJERCICIO 4:
 Hacer un programa para que el usuario ingrese un número positivo y luego se muestren por pantalla los números entre el 1 y el número ingresado por el usuario.
 Ejemplo. Si el usuario ingresa 15, se mostrarán los números entre el 1 y el 15.
 
@@ -95,7 +95,7 @@ int main(){
 }
 */
 
-/* EJERCICIO 4:
+/* EJERCICIO 5:
 Hacer un programa para que el usuario ingrese dos números y luego el programa muestre por pantalla los
 números entre el menor y el mayor de ambos.
 Ejemplo, si el usuario ingresa 3 y 15, se mostrarán los números entre el 3 y el 15 y si el
@@ -221,8 +221,6 @@ Hacer un programa para ingresar una lista de 10 números, luego informar el porce
 */
 /*
 #include <iostream>
-//Hacer un programa para ingresar una lista de 10 números, luego informar el máximo.
-
 using namespace std;
 
 int main(){
@@ -520,39 +518,122 @@ int main() {
     }
     return 0;
 }*/
+/*EJERCICIO 18:
+Hacer un programa para ingresar un número y luego informar todos los divisores pares de ese número.
+Ejemplo A. Si se ingresa 6 se listará: 2 y 6
+Ejemplo B. Si se ingresa 8 se listará: 2 y 4.
+Ejemplo C. Si se ingresa 11 no se listará nada.
+
 #include <iostream>
 
 using namespace std;
 
 int main(){
+    int n;
 
-    int n,par = 0, primo,  ubicacionPrimo = 0, contadorPar=0,ubicacionPar = 0, contador =0;
+    cout << "Ingrese un numero: " endl;
+    cin >> n;
 
-    cout << "ingrese seis numero: " << endl;
+    cout << "Los divisores pares del numero: " << n << " son: ";
 
-    for(int i=0; i<7; i++){
-        cin >> n;
-        if(n%2==0){
-            contadorPar++;
-            if(contadorPar==1){
-            par=n;
-            ubicacionPar=i+1;
-            }
-        }
-        if(n%1==0){
-          ubicacionPrimo = i;
-          contador ++;
-          if (contador == 2){
-            primo = n;
-          }
-
+    for (int i=1; i<= n; i++){
+        if (n % i == 0 && i % 2 == 0){
+            cout << i << endl;
         }
     }
-    cout << "par: " << par << endl;
-    cout << "ubicacion par: " << ubicacionPar << endl;
-    cout << "ultimo primo: " << primo;
-    cout << "ubicacion primo: " << ubicacionPrimo;
-
 
     return 0;
-}
+}*/
+/*EJERCICIO 19:
+Hacer un programa para ingresar un número y luego informar la cantidad de divisores de ese número.
+Ejemplo A. Si se ingresa 6 se listará: 4 divisores.
+Ejemplo B. Si se ingresa 9 se listará: 3 divisores.
+Ejemplo C. Si se ingresa 11 se listará: 2 divisores.
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, divisores = 0;
+
+    cout << "Ingrese un numero: " << endl;
+    cin >> n;
+
+    cout << "La cantidad de dividores del numero: " << n << " es de: ";
+
+    for (int i = 1; i <= n; i++){
+        if (n % i == 0){
+            divisores++;
+        }
+    }
+
+    cout << divisores;
+
+    return 0;
+}*/
+/* EJERCICIO 20:
+Se define a un número como primo cuando tiene solamente dos divisores.
+Ejemplo A: 2, 7, 11, 13 son números primos, ya que todos tienen solamente dos divisores.
+Ejemplo B: 6 no es primo, pues tiene 4 divisores (1, 2, 3 y 6)
+Ejemplo C: 9 no es primo, pues tiene 3 divisores (1, 3 y 9)
+Hacer un programa para ingresar un número y luego informar con un cartel
+aclaratorio si el mismo es un número primo o es número no primo.
+
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, divisores = 0;
+
+    cout << "Ingrese un numero: " << endl;
+    cin >> n;
+
+    for (int i = 1; i <= n; i++){
+        if (n % i == 0){
+            divisores++;
+        }
+    }
+    if (divisores == 2){
+        cout << "El numero " << n << " es un numero primo";
+    }else {
+        cout << "El numero " << n << " no es un numero primo";
+    }
+    return 0;
+}*/
+/*EJERCICIO 21:
+Se define como divisores propios de un número a aquellos que son sus divisores excluyendo al número en sí mismo.
+Ejemplo A. Los divisores propios del 4 son: 1 y 2.
+Ejemplo B. Los divisores propios del 12 son: 1, 2, 3, 4 y 6.
+Se define a un número como perfecto cuando la suma de todos sus divisores propios coincide con el número en sí mismo.
+Ejemplo A: 6 es número perfecto pues 1+2+3=6
+Ejemplo B: 28 es número perfecto pues 1+2+4+7+14=28
+Ejemplo C: 12 no es número perfecto pues 1+2+3+4+6=16
+Hacer un programa para ingresar un número y luego informar con un cartel aclaratorio si el mismo es un número perfecto o
+no es número perfecto
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, divisores = 0, acumulador = 0;
+
+    cout << "Ingrese un numero: " << endl;
+    cin >> n;
+
+    for (int i = 1; i <= n/2; i++){
+        if (n % i == 0){
+            divisores++;
+            acumulador += i;
+        }
+    }
+    if (acumulador == n){
+        cout << "El numero " << n << " es perfecto";
+    }else {
+        cout << "El numero " << n << " es imperfecto";
+    }
+    return 0;
+}*/
