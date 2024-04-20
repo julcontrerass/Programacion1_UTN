@@ -435,7 +435,7 @@ int main() {
 	cout << "El mayor es: " << Mayor;
 	return 0;
 }*/
-
+/*
 //hacer programa que permita calcular el costo total de un proyecto. pedir cantidad de horas (int), tipo de lenguaje (char) y urgente o no (bool)
 #include <iostream>
 
@@ -489,6 +489,79 @@ int main(){
 
     cout << "el precio final es de " << precio;
 
+
+    return 0;
+}
+*/
+/* EJERCICIO 17:
+Hacer un programa para ingresar por teclado cuatro números. Si los valores que se ingresaran están ordenados en forma creciente, emitir el mensaje “Conjunto Ordenado”, caso contrario emitir el mensaje: “Conjunto Desordenado”.
+Ejemplo A: si los números que se ingresan son 8, 10, 12 y 14, entonces están ordenados.
+Ejemplo B: si los números que se ingresan son 8, 12, 12 y 14, entonces están ordenados.
+Ejemplo C: si los números que se ingresan son 10, 8, 12 y 14, entonces están desordenados.
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int n1,n2,n3,n4;
+    cout << "ingrese un numero: ";
+    cin >> n1;
+    cout << "ingrese otro: ";
+    cin >> n2;
+    cout << "otro: ";
+    cin >> n3;
+    cout << "ultimo: ";
+    cin >> n4;
+
+    if ((n1 < n2 && n2 < n3 && n3 < n4) || (n4 < n3 && n3 < n2 && n2 < n1)){
+        cout << "están ordenados";
+    }
+    else{
+        cout << "están desordenados";
+    }
+
+    return 0;
+}*/
+
+/* EJERCICIO 18:
+Una empresa de electricidad cobra el servicio a sus clientes de acuerdo a la siguiente escala:
+$10 por kilovatio (kW) por el consumo hasta los primeros 100 kW de consumo.
+$12 por kW por el consumo excedente de 101 a 200 kW.
+$15 por kW por el consumo excedente de 201 kW en adelante.
+Hacer un programa para que, dado el consumo en kilovatios de un determinado cliente, el programa calcule e informe el total a pagar.
+Ejemplo 1: Un consumo de 55 kW, se calculará: $ 10 x 55= $ 550
+Ejemplo 2: Un consumo de 125 kW, se calculará: $10 x 100 + $12 x 25 = $1300.
+Ejemplo 3: Un consumo de 250 kW, se calculará: $10 x 100 + $12 x 100 + $15 x 50 = $2950.*/
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int kw, precio;
+    //Solicita al usuario el ingreso de kilovatios
+    cout << "ingrese kw: " << endl;
+    cin >> kw;
+
+    //Realiza las preguntas de, dependiendo el ingreso de kilovatios utilizados, es la cuenta que hace
+    //para calcular el total a pagar
+    if(kw <= 100){
+        precio = kw * 10;
+    }
+    else{
+        if(kw >= 101 && kw <=200){
+            precio = (100 * 10) + (kw - 100) * 12;
+        }
+        else{
+        if(kw >= 201){
+            precio = (100 * 10 + 100 * 12) + (kw - 200) * 15;
+        }
+    }
+    }
+    // Muestra por pantalla el total a pagar
+    cout << "el precio final es de " << precio;
 
     return 0;
 }

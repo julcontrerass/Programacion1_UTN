@@ -520,3 +520,39 @@ int main() {
     }
     return 0;
 }*/
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int n,par = 0, primo,  ubicacionPrimo = 0, contadorPar=0,ubicacionPar = 0, contador =0;
+
+    cout << "ingrese seis numero: " << endl;
+
+    for(int i=0; i<7; i++){
+        cin >> n;
+        if(n%2==0){
+            contadorPar++;
+            if(contadorPar==1){
+            par=n;
+            ubicacionPar=i+1;
+            }
+        }
+        if(n%1==0){
+          ubicacionPrimo = i;
+          contador ++;
+          if (contador == 2){
+            primo = n;
+          }
+
+        }
+    }
+    cout << "par: " << par << endl;
+    cout << "ubicacion par: " << ubicacionPar << endl;
+    cout << "ultimo primo: " << primo;
+    cout << "ubicacion primo: " << ubicacionPrimo;
+
+
+    return 0;
+}
