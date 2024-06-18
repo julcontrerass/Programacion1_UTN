@@ -1,5 +1,7 @@
 
 
+//GUIA NUMERO 1 Estructuras Secuenciales
+
 // EJERCICIO 1:
 // Hacer un programa para ingresar por teclado la cantidad de
 // horas trabajadas por un operario y el valor que se le paga por
@@ -36,18 +38,18 @@ using namespace std;
 
 int main(){
 	int Num1, Num2;
-	
+
 	cout << "Ingrese un numero: ";
 	cin >> Num1;
 	cout << "Ingrese otro numero: ";
 	cin >> Num2;
-	
+
 	int Num3 = Num1;
 	Num1 = Num2;
 	Num2 = Num3;
-	
-	cout << "Los nuevos valores serian: " << Num1 << " y " << Num2; 
-	
+
+	cout << "Los nuevos valores serian: " << Num1 << " y " << Num2;
+
 	return 0;
 }
 
@@ -59,16 +61,16 @@ using namespace std;
 
 int main(){
 	int Num1, Num2;
-	
+
 	cout << "Ingrese un numero: ";
 	cin >> Num1;
 	cout << "Ingrese otro numero: ";
 	cin >> Num2;
-	
+
 	Num1 = Num1 + Num2;
 	Num2 = Num1 - Num2;
 	Num1 = Num1 - Num2;
-	
+
 	cout << "La ubicacion nueva seria: " << Num1 << " y " << Num2;
 	return 0;
 }
@@ -352,7 +354,7 @@ Ejemplo B: Si el importe a retirar es $3400 se mostrar� por pantalla que se de
 
 Ejemplo C: Si el importe a retirar es $300 se mostrar� por pantalla que se deber�n entregar 1 billete de $200, 1 billete de $100, 0 billetes de $1.000 y 0 billetes de $500.
 
-Recordatorio. Considerar en todos los casos que el importe a retirar es en todos los casos m�ltiplo de $100 ya que el cajero no cuenta con billetes de $50, $20 o $10.	
+Recordatorio. Considerar en todos los casos que el importe a retirar es en todos los casos m�ltiplo de $100 ya que el cajero no cuenta con billetes de $50, $20 o $10.
 
 #include <iostream>
 
@@ -362,25 +364,25 @@ int main(){
 	int Importe;
 	cout << "Ingrese el importe a retirar: ";
 	cin >> Importe;
-	
+
 	int Cantidad1000 = Importe/1000;
 	Importe = Importe % 1000;
-	
+
 	int Cantidad500= Importe/500;
 	Importe = Importe % 500;
-	
+
 	int Cantidad200 = Importe/200;
 	Importe = Importe % 200;
-	
+
 	int Cantidad100 = Importe/100;
-	
+
 	cout << "Se debera entregar: " << endl;
 	cout << Cantidad1000 << " billetes de 1000" << endl;
 	cout << Cantidad500 << " billetes de 500" << endl;
 	cout << Cantidad200 << " billetes de 200" << endl;
 	cout << Cantidad100 << " billetes de 100";
 	return 0;
-	
+
 }*/
 /*
 EJERCICIO 14:
@@ -398,18 +400,18 @@ int main(){
 	int Importe, Descuento;
 	cout << "Ingrese el importe de la compra: ";
 	cin >> Importe;
-	
+
 	cout << "Ingrese el descuento a aplicar: ";
 	cin >> Descuento;
-	
+
 	int DescuentoCalculado = (Importe * Descuento) / 100;
 	int Total = Importe - DescuentoCalculado;
-	
-	cout << "Importe: " << Importe << endl; 
+
+	cout << "Importe: " << Importe << endl;
 	cout << "Descuento: " << DescuentoCalculado << endl;
 	cout << "Precio Final: " << Total;
 	return 0;
-	
+
 }*/
 
 /* EJERCICIO 15:
@@ -423,17 +425,17 @@ using namespace std;
 
 int main(){
 	int TempMaxima, TempMinima;
-	
+
 	cout << "Ingrese la temperatura maxima: ";
 	cin >> TempMaxima;
-	
+
 	cout << "Ingrese la temperatura minima: ";
 	cin >> TempMinima;
-	
+
 	int AmplitudTermica = TempMaxima - TempMinima;
-	
+
 	cout << "La amplitud termica es: " << AmplitudTermica;
-	
+
 	return 0;
-	
+
 }

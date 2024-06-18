@@ -1,3 +1,6 @@
+
+// GUIA 2 CONDICIONALES
+
 /*EJERCICIO 1:
 Hacer un programa para ingresar por teclado un número y luego emitir por pantalla un cartel aclaratorio indicando si el mismo es positivo, negativo o cero.
 Importante: Verifique que el programa emita UN SOLO CARTEL
