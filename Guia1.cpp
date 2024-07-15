@@ -418,7 +418,7 @@ int main(){
 La amplitud t�rmica es la diferencia entre la temperatura m�xima y la temperatura m�nima en una zona y tiempo determinado. Dada la temperatura m�xima y la temperatura m�nima de San Fernando de ayer, calcular y mostrar la amplitud t�rmica.
 
 NOTA: El usuario ingresar� como temperatura m�xima un valor mayor o igual al de la temperatura m�nima.
-*/
+
 #include <iostream>
 
 using namespace std;
@@ -438,4 +438,36 @@ int main(){
 
 	return 0;
 
+}*/
+
+/* EJERCICIO 16:
+El Laboratorio V&V hace frascos de píldoras para aprender a programar. Cada frasco contiene 75 píldoras y cada píldora contiene 45 mg de Betamol, 2 grs de Micilina y 7 mg de Ácido Sinítico.
+Nos solicitan un programa donde se ingrese la cantidad de frascos de un pedido y muestre la cantidad de miligramos de Betamol, Micilina y de Ácido Sinítico que son necesarios para elaborarlos.
+
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int cantidadDeFrascos, cantPildoras, betamol, micilina, acidoSinitico;
+
+	cout << "Ingrese la cantidad de frascos " << endl;
+	cin >> cantidadDeFrascos;
+
+
+	cantPildoras = cantidadDeFrascos * 75;
+
+	betamol = 45 * cantPildoras;
+	micilina = 2 * cantPildoras;
+	acidoSinitico = 7 * cantPildoras;
+
+	cout << "Para realizar " << cantidadDeFrascos << " de frascos Se nececita: " << endl;
+	cout << betamol << " mg de Betamol" << endl;
+	cout << micilina << " grs de micilina" << endl;
+	cout << acidoSinitico << " mg de Acido Sinitico";
+
+	return 0;
+
 }
+*/

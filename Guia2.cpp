@@ -535,7 +535,7 @@ $15 por kW por el consumo excedente de 201 kW en adelante.
 Hacer un programa para que, dado el consumo en kilovatios de un determinado cliente, el programa calcule e informe el total a pagar.
 Ejemplo 1: Un consumo de 55 kW, se calculará: $ 10 x 55= $ 550
 Ejemplo 2: Un consumo de 125 kW, se calculará: $10 x 100 + $12 x 25 = $1300.
-Ejemplo 3: Un consumo de 250 kW, se calculará: $10 x 100 + $12 x 100 + $15 x 50 = $2950.*/
+Ejemplo 3: Un consumo de 250 kW, se calculará: $10 x 100 + $12 x 100 + $15 x 50 = $2950.
 
 #include <iostream>
 
@@ -568,3 +568,147 @@ int main(){
 
     return 0;
 }
+*/
+
+/* EJERCICIO 20:
+Hacer un programa en el que se ingrese la edad y altura de 5 personas. Luego, calcular e informar:
+La cantidad de personas mayores a 30 años que midan más de 1.8 metros.
+El promedio de altura de las personas mayores a 30 años.
+La cantidad de personas con altura entre 1.7 y 1.8 (ambos inclusive)
+La cantidad de personas cuya edad sea de 20, 30 o 40 años.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int Edad1, Edad2, Edad3, Edad4, Edad5;
+    float Altura1, Altura2, Altura3, Altura4, Altura5;
+
+    int ContadorMayores30YAltura = 0;
+    float SumaAlturaMayores30 = 0;
+    int ContadorMayores30 = 0;
+    int ContadorAlturaEntre17Y18 = 0;
+    int ContadorEdadesEspecificas = 0;
+
+    // Persona 1
+    cout << "Ingrese la edad de la persona 1: ";
+    cin >> Edad1;
+    cout << "Ingrese la altura de la persona 1 (en metros): ";
+    cin >> Altura1;
+
+    if (Edad1 > 30 && Altura1 > 1.8) {
+        ContadorMayores30YAltura++;
+    }
+    if (Edad1 > 30) {
+        SumaAlturaMayores30 += Altura1;
+        ContadorMayores30++;
+    }
+    if (Altura1 >= 1.7 && Altura1 <= 1.8) {
+        ContadorAlturaEntre17Y18++;
+    }
+    if (Edad1 == 20 || Edad1 == 30 || Edad1 == 40) {
+        ContadorEdadesEspecificas++;
+    }
+
+    // Persona 2
+    cout << "Ingrese la edad de la persona 2: ";
+    cin >> Edad2;
+    cout << "Ingrese la altura de la persona 2 (en metros): ";
+    cin >> Altura2;
+
+    if (Edad2 > 30 && Altura2 > 1.8) {
+        ContadorMayores30YAltura++;
+    }
+    if (Edad2 > 30) {
+        SumaAlturaMayores30 += Altura2;
+        ContadorMayores30++;
+    }
+    if (Altura2 >= 1.7 && Altura2 <= 1.8) {
+        ContadorAlturaEntre17Y18++;
+    }
+    if (Edad2 == 20 || Edad2 == 30 || Edad2 == 40) {
+        ContadorEdadesEspecificas++;
+    }
+
+    // Persona 3
+    cout << "Ingrese la edad de la persona 3: ";
+    cin >> Edad3;
+    cout << "Ingrese la altura de la persona 3 (en metros): ";
+    cin >> Altura3;
+
+    if (Edad3 > 30 && Altura3 > 1.8) {
+        ContadorMayores30YAltura++;
+    }
+    if (Edad3 > 30) {
+        SumaAlturaMayores30 += Altura3;
+        ContadorMayores30++;
+    }
+    if (Altura3 >= 1.7 && Altura3 <= 1.8) {
+        ContadorAlturaEntre17Y18++;
+    }
+    if (Edad3 == 20 || Edad3 == 30 || Edad3 == 40) {
+        ContadorEdadesEspecificas++;
+    }
+
+    // Persona 4
+    cout << "Ingrese la edad de la persona 4: ";
+    cin >> Edad4;
+    cout << "Ingrese la altura de la persona 4 (en metros): ";
+    cin >> Altura4;
+
+    if (Edad4 > 30 && Altura4 > 1.8) {
+        ContadorMayores30YAltura++;
+    }
+    if (Edad4 > 30) {
+        SumaAlturaMayores30 += Altura4;
+        ContadorMayores30++;
+    }
+    if (Altura4 >= 1.7 && Altura4 <= 1.8) {
+        ContadorAlturaEntre17Y18++;
+    }
+    if (Edad4 == 20 || Edad4 == 30 || Edad4 == 40) {
+        ContadorEdadesEspecificas++;
+    }
+
+    // Persona 5
+    cout << "Ingrese la edad de la persona 5: ";
+    cin >> Edad5;
+    cout << "Ingrese la altura de la persona 5 (en metros): ";
+    cin >> Altura5;
+
+    if (Edad5 > 30 && Altura5 > 1.8) {
+        ContadorMayores30YAltura++;
+    }
+    if (Edad5 > 30) {
+        SumaAlturaMayores30 += Altura5;
+        ContadorMayores30++;
+    }
+    if (Altura5 >= 1.7 && Altura5 <= 1.8) {
+        ContadorAlturaEntre17Y18++;
+    }
+    if (Edad5 == 20 || Edad5 == 30 || Edad5 == 40) {
+        ContadorEdadesEspecificas++;
+    }
+
+    // Resultados
+    cout << "\nResultados:\n";
+    cout << "Cantidad de personas mayores a 30 años que miden más de 1.8 metros: "
+         << ContadorMayores30YAltura << endl;
+
+    if (ContadorMayores30 > 0) {
+        float PromedioAltura = SumaAlturaMayores30 / ContadorMayores30;
+        cout << "Promedio de altura de las personas mayores a 30 años: "
+             << PromedioAltura << " metros" << endl;
+    } else {
+        cout << "No hay personas mayores a 30 años para calcular el promedio de altura." << endl;
+    }
+
+    cout << "Cantidad de personas con altura entre 1.7 y 1.8 (inclusive): "
+         << ContadorAlturaEntre17Y18 << endl;
+    cout << "Cantidad de personas cuya edad sea de 20, 30 o 40 años: "
+         << ContadorEdadesEspecificas << endl;
+
+    return 0;
+}
+*/
